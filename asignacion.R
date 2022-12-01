@@ -1,0 +1,2 @@
+lang <- c("JS", "Python", "Java", "C", "C++", "C#", "Rust", "R", "Go", "Swift", "Ruby", "PHP", "Shell", "Scala", "J", "Kotlin", "Objective-C", "Groovy", "Elixir", "Lua", "DM", "Perl", "Dart", "Clojure", "PowerShell", "CoffeeScript", "Haskell", "OCaml", "Lisp", "Vim Script ", "Jsonnet", "Erlang", "Puppet", "Julia", "SmallTalk", "Matlab", "WebAssembly", "Fortran", "F#", "VisualBasics", "Apex", "ABAP", "Vala ", "Nix", "Crystal", "Roff", "Perl 6", "FreeMaker", "PureScript", "Objective C++")
+paste(c("Edu", "Jesus", "Alex", "Dani"), "-", sample(lang, 4))
