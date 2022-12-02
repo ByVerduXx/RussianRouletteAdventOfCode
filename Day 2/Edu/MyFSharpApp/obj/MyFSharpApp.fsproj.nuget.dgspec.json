@@ -1,0 +1,71 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/ediu3095/Documents/AdventOfHell/Day 2/Edu/MyFSharpApp/MyFSharpApp.fsproj": {}
+  },
+  "projects": {
+    "/home/ediu3095/Documents/AdventOfHell/Day 2/Edu/MyFSharpApp/MyFSharpApp.fsproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/ediu3095/Documents/AdventOfHell/Day 2/Edu/MyFSharpApp/MyFSharpApp.fsproj",
+        "projectName": "MyFSharpApp",
+        "projectPath": "/home/ediu3095/Documents/AdventOfHell/Day 2/Edu/MyFSharpApp/MyFSharpApp.fsproj",
+        "packagesPath": "/home/ediu3095/.nuget/packages/",
+        "outputPath": "/home/ediu3095/Documents/AdventOfHell/Day 2/Edu/MyFSharpApp/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/ediu3095/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "/usr/share/dotnet/sdk/7.0.100/FSharp/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "FSharp.Core": {
+              "include": "Runtime, Compile, Build, Native, Analyzers, BuildTransitive",
+              "target": "Package",
+              "version": "[7.0.0, )",
+              "generatePathProperty": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.0, 7.0.0]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "ezR0mNiEhRORJfDMi2MQiOSK/b7Ppw5Ar05AgHp1qaOU2KQLl3J8AR0AslDKEtD7aJBqlUgYlSAJ+2TqyEnRYw==",
+  "success": true,
+  "projectFilePath": "/home/ediu3095/Documents/AdventOfHell/Day 2/Edu/MyFSharpApp/MyFSharpApp.fsproj",
+  "expectedPackageFiles": [
+    "/home/ediu3095/.nuget/packages/fsharp.core/7.0.0/fsharp.core.7.0.0.nupkg.sha512",
+    "/home/ediu3095/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.0/microsoft.aspnetcore.app.ref.7.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
