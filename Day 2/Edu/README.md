@@ -9,5 +9,5 @@ dotnet run
 from this folder. The sample.in is introduced through the standard input:
 
 ```bash
-dotnet run < ../sample.in
+dotnet run < sample.in
 ```

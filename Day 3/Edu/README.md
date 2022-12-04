@@ -9,5 +9,5 @@ node run start
 To pass the input to the program just pipe it through the standard input:
 
 ```bash
-node run start < ../sample.in
+node run start < sample.in
 ```
