@@ -1,0 +1,6 @@
+# Input files
+sample*
+input*
+
+# Executable files
+build/
