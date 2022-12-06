@@ -4,3 +4,4 @@ input*
 
 # Executable files
 build/
+node_modules/
