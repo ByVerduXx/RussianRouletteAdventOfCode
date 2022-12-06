@@ -1,9 +1,9 @@
 input := stdin nextLine.
-c := OrderedCollection new.
+c := ArrayList new.
 
 [ input ~= nil ] whileTrue: [
     c add: input.
     input := stdin nextLine.
 ].
 
-c sort do: [ :each | each printNl ]
+c do: [ :each | each printNl ]
