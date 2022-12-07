@@ -20,11 +20,13 @@ to generate this file without the comments in this block.
   , "encoding"
   , "foldable-traversable"
   , "lists"
+  , "maybe"
   , "monad-loops"
   , "node-buffer"
   , "node-fs"
   , "node-fs-aff"
   , "node-readline"
+  , "partial"
   , "prelude"
   , "strings"
   ]
