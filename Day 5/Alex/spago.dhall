@@ -12,20 +12,15 @@ to generate this file without the comments in this block.
 -}
 { name = "my-project"
 , dependencies =
-  [ "aff"
-  , "arrays"
+  [ "arrays"
   , "console"
   , "effect"
   , "either"
-  , "encoding"
-  , "foldable-traversable"
-  , "lists"
-  , "monad-loops"
-  , "node-buffer"
-  , "node-fs"
-  , "node-fs-aff"
+  , "maybe"
   , "node-readline"
+  , "partial"
   , "prelude"
+  , "refs"
   , "strings"
   ]
 , packages = ./packages.dhall

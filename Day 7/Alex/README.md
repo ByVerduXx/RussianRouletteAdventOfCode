@@ -1,0 +1,2 @@
+# How to run
+To run this code you need to use an onliner compiler like [paiza.io](https://paiza.io/projects/89IGCKMAWYFGZcVda-fVtg?language=objective-c), because this programming language is not supported in Windows and Linux.
