@@ -1,0 +1,22 @@
+{
+  "configurations": [
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Debug Edu",
+      "program": "${workspaceFolder:Edu}/.build/debug/Edu",
+      "args": [],
+      "cwd": "${workspaceFolder:Edu}",
+      "preLaunchTask": "swift: Build Debug Edu"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Release Edu",
+      "program": "${workspaceFolder:Edu}/.build/release/Edu",
+      "args": [],
+      "cwd": "${workspaceFolder:Edu}",
+      "preLaunchTask": "swift: Build Release Edu"
+    }
+  ]
+}
