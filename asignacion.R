@@ -13,7 +13,14 @@ df <- as.data.frame(sapply(participants, function(x) sample(languages, 25, TRUE)
 # Elecciones del dia 1 y 2 (las calculamos de otra forma así que las forzamos)
 df[1:2, 1:5] <- matrix(c("Fortran", "F#", "PureScript", "Groovy", "PowerShell", "PureScript", "Kotlin", "Perl", "x86-64 ASM", "Vim Script"), 2, 5)
 
-# Elecciones para el dia n
-n <- 1:9
+# Dias que mostrar
+days <- 1:9
+
+# Participantes ordenados por numero de problemas resueltos
+# (solo si han resuelto al menos 1)
 solved <- c(7, 4, 7, 6, 2, 0, 5, 0, 0)
-df[n, rev(order(solved)[-(1:3)])]
+orderedsolved <- order(solved)
+selectedsolved <- rev(orderedsolved[solved[orderedsolved] > 0])
+
+# Elecciones para los dias y participantes seleccionados
+df[days, selectedsolved]
