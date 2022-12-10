@@ -3,7 +3,7 @@
 ## Setup
 Install Purescript and Spago
 ```bash
-npm install -g purescript
+npm install purescript
 sudo snap install spago
 ```
 

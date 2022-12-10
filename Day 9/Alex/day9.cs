@@ -138,7 +138,7 @@ public class Day9 {
         for (int i = 0; i < 9; i++)
             tail_pos.Add(new List<int>{grid.Count-1, 0});
 
-        // printGrid(grid, head_pos, tail_pos[8]);
+        printGrid(grid, head_pos, tail_pos[8]);
 
         string input = Console.ReadLine();
         while (input!=null) {
@@ -150,7 +150,7 @@ public class Day9 {
             // Calculate new positions
             moveHead(head_pos, tail_pos, direction, distance, grid, visited);
 
-            // printGrid(visited[1], head_pos, tail_pos[8]);
+            printGrid(visited[1], head_pos, tail_pos[8]);
 
             input = Console.ReadLine();
         }
