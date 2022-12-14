@@ -1,0 +1,57 @@
+(defn increment-cycle [X cycle sum]
+  (do
+    ;; cycle'
+    (def cycle' (+ cycle 1))
+    ;; sum'
+    (if (== 0 (mod (- cycle' 20) 40))
+      (do
+        (def sum' (+ sum (* X cycle')))
+        ;; (println "X is" X "at cycle" cycle')
+      )
+      (def sum' sum)
+    )
+    ;; side-effects
+    (if (< (abs (- X (mod (- cycle' 1) 40))) 2)
+      (print "#")
+      (print " ")
+    )
+    (if (== 0 (mod cycle' 40))
+      (println "")
+    )
+
+    ;; return
+    [cycle' sum']
+  )
+)
+
+(defn handle-line [lines X cycle sum]
+  (do
+    (def line (first lines))
+    (def lines' (rest lines))
+    (if (nil? line)
+      (println "Sum is" sum)
+      (do
+        (def aux (increment-cycle X cycle sum))
+        (def cycle' (first aux))
+        (def sum' (second aux))
+        (if (re-matches #"addx -?\d+" line)
+          (do
+            (def aux' (increment-cycle X cycle' sum'))
+            (def cycle'' (first aux'))
+            (def sum'' (second aux'))
+            (def n (Integer/parseInt(get (re-matches #"addx (-?\d+)" line) 1)))
+            (def X' (+ X n))
+          )
+          (do
+            (def cycle'' cycle')
+            (def sum'' sum')
+            (def X' X)
+          )
+        )
+        (recur lines' X' cycle'' sum'')
+      )
+    ) ;; EOF
+  )
+)
+
+(handle-line (line-seq (java.io.BufferedReader. *in*)) 1 0 0)
